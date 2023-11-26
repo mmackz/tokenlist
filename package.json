@@ -5,8 +5,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
-    "start": "node scripts/updateMetadata.js"
+    "test:live": "mocha test/livedata.test.js",
+    "test:mock": "mocha 'test/mockdata.test.js'",
+    "test": "npm run test:mock && npm run test:live",
+    "changes": "node scripts/updateMetadata.js"
   },
   "author": "",
   "license": "ISC",
