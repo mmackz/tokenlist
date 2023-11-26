@@ -17,11 +17,10 @@ export function getTokenListsFromFiles() {
          const rawData = fs.readFileSync(filePath, "utf8");
          const tokenList = JSON.parse(rawData);
          tokenLists.push(tokenList);
-      } catch (err) {
+      } catch {
          if (filename === "tokenlist.json") {
             throw new Error("error reading tokenlist.json file");
          }
-         continue;
       }
    }
    return tokenLists;
@@ -73,7 +72,7 @@ export function cloneDeep(obj) {
    if (obj instanceof Object) {
       const clonedObj = {};
       for (const key in obj) {
-         if (obj.hasOwnProperty(key)) {
+         if (Object.hasOwn(obj, key)) {
             clonedObj[key] = cloneDeep(obj[key]);
          }
       }

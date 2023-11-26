@@ -8,7 +8,7 @@ import { schema } from "./schema.js";
 export async function validateTokenAddresses(base, update) {
    const diff = diffTokenLists(base.tokens, update.tokens);
    if (diff.added) {
-      let idx = 0;
+      const idx = 0;
       for (const token of diff.added) {
          try {
             const { chainId, address, decimals } = token;
