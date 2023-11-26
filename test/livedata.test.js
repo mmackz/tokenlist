@@ -40,7 +40,7 @@ describe("Live Data", async () => {
          const newVersion = getNextVersion(previousTokenList, currentTokenList);
          expect(
             versionComparator(newVersion, currentTokenList.version),
-            "Version number is not correct. To fix this, run 'npm start' to generate metadata changes"
+            "Version number is not correct. To fix this, run 'npm run changes' to generate metadata changes"
          ).to.equal(0);
       });
    });
