@@ -8,7 +8,9 @@
     "test:live": "mocha test/livedata.test.js",
     "test:mock": "mocha 'test/mockdata.test.js'",
     "test": "npm run test:mock && npm run test:live",
-    "changes": "node scripts/updateMetadata.js"
+    "changes": "node scripts/updateMetadata.js",
+    "format": "rome format .",
+    "lint": "rome check ."
   },
   "author": "",
   "license": "ISC",
@@ -21,6 +23,7 @@
   },
   "devDependencies": {
     "chai": "^4.3.10",
-    "mocha": "^10.2.0"
+    "mocha": "^10.2.0",
+    "rome": "^12.1.3"
   }
 }
