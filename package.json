@@ -9,7 +9,7 @@
     "test:mock": "mocha 'test/mockdata.test.js'",
     "test": "npm run test:mock && npm run test:live",
     "changes": "node scripts/updateMetadata.js",
-    "format": "rome format .",
+    "format": "rome format . --write",
     "lint": "rome check ."
   },
   "author": "",
