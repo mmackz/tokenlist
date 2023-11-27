@@ -5,9 +5,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:mock": "mocha 'test/0_mockdata.test.js'",
-    "test:live": "mocha 'test/1_livedata.test.js'",
-    "test": "mocha",
+    "test:mock": "mocha 'test/0_mockdata.test.js' --timeout 6000",
+    "test:live": "mocha 'test/1_livedata.test.js' --timeout 6000",
+    "test": "mocha --timeout 6000",
     "changes": "node scripts/updateMetadata.js",
     "format": "rome format . --write",
     "lint": "rome check ."
