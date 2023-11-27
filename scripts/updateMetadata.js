@@ -7,7 +7,6 @@ import {
 import fs from 'fs'
 import { validate } from '../src/index.js'
 import { isVersionUpdate, versionComparator } from '@uniswap/token-lists'
-
 ;(async function updateMetaData() {
   let [update, base] = getTokenListsFromFiles()
 
@@ -18,7 +17,6 @@ import { isVersionUpdate, versionComparator } from '@uniswap/token-lists'
       console.error('Error fetching token list from Git:', err)
       process.exit(1)
     }
-    
   }
 
   if (validate(update)) {

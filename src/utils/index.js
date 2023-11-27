@@ -5,8 +5,8 @@ import {
   nextVersion,
   isVersionUpdate,
 } from '@uniswap/token-lists'
-import { validate } from '../index.js';
-import simpleGit from 'simple-git';
+import { validate } from '../index.js'
+import simpleGit from 'simple-git'
 import { fileURLToPath } from 'url'
 
 export function getTokenListsFromFiles() {
@@ -32,8 +32,8 @@ export async function getTokenListFromGit() {
   const git = simpleGit()
   try {
     const fileContent = await git.show(['main:tokenlist.json'])
-    const tokenList = JSON.parse(fileContent);
-    const isValid = await validate(tokenList);
+    const tokenList = JSON.parse(fileContent)
+    const isValid = await validate(tokenList)
     if (isValid) {
       return JSON.parse(fileContent)
     }

@@ -7,10 +7,7 @@
     "patch": 0
   },
   "tags": {},
-  "keywords": [
-    "rabbithole",
-    "default"
-  ],
+  "keywords": ["rabbithole", "default"],
   "tokens": [
     {
       "chainId": 1,
