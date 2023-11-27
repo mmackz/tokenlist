@@ -8,14 +8,18 @@ import {
 } from "../src/utils/index.js";
 
 describe("Live Data", async () => {
-   const [currentTokenList, prevTokenList] = getTokenListsFromFiles();
-   let previousTokenList = prevTokenList
-   try {
-      previousTokenList = await getTokenListFromGit();
-   } catch (err) {
-      console.error("Error fetching token list from Git:", err);
-      process.exit(1);
-   }
+   let currentTokenList
+   let previousTokenList
+ 
+   before(async () => {
+     ;[currentTokenList, previousTokenList] = getTokenListsFromFiles()
+     try {
+       previousTokenList = await getTokenListFromGit()
+     } catch (err) {
+       console.error('Error fetching token list from Git:', err)
+       process.exit(1)
+     }
+   })
 
    describe("Token List Tests", async () => {
       describe("when using current tokenlist.json", () => {
