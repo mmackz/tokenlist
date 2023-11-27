@@ -1,8 +1,8 @@
 {
-  "name": "RabbitHole Plugins Default Tokenlist",
-  "timestamp": "2023-11-24T06:35:52.657Z",
+  "name": "RabbitHole",
+  "timestamp": "2023-11-27T03:15:38.984Z",
   "version": {
-    "major": 0,
+    "major": 1,
     "minor": 0,
     "patch": 0
   },
@@ -480,7 +480,7 @@
     },
     {
       "chainId": 137,
-      "address": "0x104592a158490a9228070E0A8e5343B499e125D0",
+      "address": "0x45c32fA6DF82ead1e2EF74d17b76547EDdFaFF89",
       "name": "Frax",
       "symbol": "FRAX",
       "decimals": 18
@@ -508,13 +508,6 @@
     },
     {
       "chainId": 137,
-      "address": "0x01288e04435bFcd4718FF203D6eD18146C17Cd4b",
-      "name": "Magic Internet Money",
-      "symbol": "MIM",
-      "decimals": 18
-    },
-    {
-      "chainId": 137,
       "address": "0x831753DD7087CaC61aB5644b308642cc1c33Dc13",
       "name": "Quickswap",
       "symbol": "QUICK",
@@ -528,23 +521,9 @@
       "decimals": 18
     },
     {
-      "chainId": 137,
-      "address": "0x6f8a06447Ff6FcF75d803135a7de15CE88C1d4ec",
-      "name": "Shiba Inu",
-      "symbol": "SHIB",
-      "decimals": 18
-    },
-    {
       "name": "Synthetix Network Token",
       "address": "0x50B728D8D964fd00C2d0AAD81718b71311feF68a",
       "symbol": "SNX",
-      "decimals": 18,
-      "chainId": 137
-    },
-    {
-      "name": "Synth sUSD",
-      "address": "0xF81b4Bec6Ca8f9fe7bE01CA734F55B2b6e03A7a0",
-      "symbol": "sUSD",
       "decimals": 18,
       "chainId": 137
     },
@@ -619,20 +598,6 @@
       "decimals": 18
     },
     {
-      "name": "Compound",
-      "address": "0x9e1028F5F1D5eDE59748FFceE5532509976840E0",
-      "symbol": "COMP",
-      "decimals": 18,
-      "chainId": 8453
-    },
-    {
-      "name": "Curve DAO Token",
-      "address": "0x8Ee73c484A26e0A5df2Ee2a4960B789967dd0415",
-      "symbol": "CRV",
-      "decimals": 18,
-      "chainId": 8453
-    },
-    {
       "name": "Dai Stablecoin",
       "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
       "symbol": "DAI",
@@ -676,20 +641,6 @@
     },
     {
       "chainId": 42161,
-      "address": "0xba5DdD1f9d7F570dc94a51479a000E3BCE967196",
-      "name": "Aave",
-      "symbol": "AAVE",
-      "decimals": 18
-    },
-    {
-      "chainId": 42161,
-      "address": "0x74885b4D524d497261259B38900f54e6dbAd2210",
-      "name": "ApeCoin",
-      "symbol": "APE",
-      "decimals": 18
-    },
-    {
-      "chainId": 42161,
       "name": "Arbitrum",
       "address": "0x912CE59144191C1204E64559FE8253a0e49E6548",
       "symbol": "ARB",
@@ -725,7 +676,7 @@
     },
     {
       "chainId": 42161,
-      "address": "0x7468a5d8E02245B00E8C0217fCE021C70Bc51305",
+      "address": "0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F",
       "name": "Frax",
       "symbol": "FRAX",
       "decimals": 18
@@ -770,34 +721,6 @@
       "address": "0x3d9907F9a368ad0a51Be60f7Da3b97cf940982D8",
       "name": "Camelot Token",
       "symbol": "GRAIL",
-      "decimals": 18
-    },
-    {
-      "chainId": 42161,
-      "address": "0xC8a4EeA31E9B6b61c406DF013DD4FEc76f21E279",
-      "name": "Render Token",
-      "symbol": "RNDR",
-      "decimals": 18
-    },
-    {
-      "chainId": 42161,
-      "address": "0x5033833c9fe8B9d3E09EEd2f73d2aaF7E3872fd1",
-      "name": "Shiba Inu",
-      "symbol": "SHIB",
-      "decimals": 18
-    },
-    {
-      "name": "Synthetix Network Token",
-      "address": "0xcBA56Cd8216FCBBF3fA6DF6137F3147cBcA37D60",
-      "symbol": "SNX",
-      "decimals": 18,
-      "chainId": 42161
-    },
-    {
-      "chainId": 42161,
-      "name": "Stargate Finance",
-      "symbol": "STG",
-      "address": "0xe018C7a3d175Fb0fE15D70Da2c874d3CA16313EC",
       "decimals": 18
     },
     {
@@ -1008,13 +931,6 @@
       "name": "Dai Stablecoin",
       "address": "0x4B9eb6c0b6ea15176BBF62841C6B2A8a398cb656",
       "symbol": "DAI",
-      "decimals": 18
-    },
-    {
-      "chainId": 324,
-      "name": "Rocket Pool ETH",
-      "address": "0x32Fd44bB869620C0EF993754c8a00Be67C464806",
-      "symbol": "rETH",
       "decimals": 18
     },
     {
