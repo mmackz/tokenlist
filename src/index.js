@@ -5,18 +5,28 @@ import addFormats from 'ajv-formats'
 import { chainIdMap, sleep } from './utils/index.js'
 import { schema } from './schema.js'
 
+const responseCache = new Map()
+
 export async function validateTokenAddresses(base, update) {
   const diff = diffTokenLists(base.tokens, update.tokens)
   if (diff.added) {
-    const idx = 0
     for (const token of diff.added) {
       try {
         const { chainId, address, decimals } = token
         const networkId = chainIdMap[chainId]
-        const res = await axios.get(
-          `https://api.coingecko.com/api/v3/coins/${networkId}/contract/${address}`,
-        )
-        await sleep(1000)
+        const cacheKey = `${networkId}-${address}`
+
+        let res
+        if (responseCache.has(cacheKey)) {
+          res = responseCache.get(cacheKey)
+        } else {
+          res = await axios.get(
+            `https://api.coingecko.com/api/v3/coins/${networkId}/contract/${address}`,
+          )
+          await sleep(1500)
+          responseCache.set(cacheKey, res)
+        }
+
         const { decimal_place, contract_address } =
           res.data.detail_platforms[networkId]
         if (contract_address !== address.toLowerCase()) {
@@ -24,9 +34,6 @@ export async function validateTokenAddresses(base, update) {
         }
         if (decimal_place !== decimals) {
           throw new Error('decimals is incorrect')
-        }
-        if (diff.added.length - idx > 1) {
-          await sleep(5000)
         }
       } catch (error) {
         if (error.response) {
