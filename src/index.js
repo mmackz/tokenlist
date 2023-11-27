@@ -16,7 +16,7 @@ export async function validateTokenAddresses(base, update) {
         const res = await axios.get(
           `https://api.coingecko.com/api/v3/coins/${networkId}/contract/${address}`,
         )
-
+        await sleep(1000)
         const { decimal_place, contract_address } =
           res.data.detail_platforms[networkId]
         if (contract_address !== address.toLowerCase()) {
@@ -26,7 +26,7 @@ export async function validateTokenAddresses(base, update) {
           throw new Error('decimals is incorrect')
         }
         if (diff.added.length - idx > 1) {
-          await sleep(6000)
+          await sleep(5000)
         }
       } catch (error) {
         if (error.response) {
