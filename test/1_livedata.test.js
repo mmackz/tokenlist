@@ -45,7 +45,7 @@ describe('Live Data', async () => {
   })
 
   describe('Token validation tests', async () => {
-    it('should pass token validation if new tokens are added', async function(){
+    it('should pass token validation if new tokens are added', async function () {
       this.timeout(30000)
       const isValid = await validateTokenAddresses(
         previousTokenList,
