@@ -12,7 +12,13 @@ import { isVersionUpdate, versionComparator } from '@uniswap/token-lists'
   let [update, base] = getTokenListsFromFiles()
 
   if (!base) {
-    base = await getTokenListFromGit()
+    try {
+      base = await getTokenListFromGit()
+    } catch (err) {
+      console.error('Error fetching token list from Git:', err)
+      process.exit(1)
+    }
+    
   }
 
   if (validate(update)) {
