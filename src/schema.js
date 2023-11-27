@@ -261,7 +261,7 @@ export const schema = {
       type: 'string',
       description: 'The name of the token list',
       minLength: 1,
-      maxLength: 30,
+      maxLength: 40,
       pattern: '^[\\w ]+$',
       examples: ['My Token List'],
     },
