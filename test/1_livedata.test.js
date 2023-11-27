@@ -12,12 +12,17 @@ describe('Live Data', async () => {
   let previousTokenList
 
   before(async () => {
-    ;[currentTokenList, previousTokenList] = getTokenListsFromFiles()
-    try {
-      previousTokenList = await getTokenListFromGit()
-    } catch (err) {
-      console.error('Error fetching token list from Git:', err)
-      process.exit(1)
+    const [updateTokenList, baseTokenList] = getTokenListsFromFiles()
+    currentTokenList = updateTokenList
+    if (!baseTokenList) {
+      try {
+        previousTokenList = await getTokenListFromGit()
+      } catch (err) {
+        console.error('Error fetching token list from Git:', err)
+        process.exit(1)
+      }
+    } else {
+      previousTokenList = baseTokenList
     }
   })
 
