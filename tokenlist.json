@@ -1,9 +1,9 @@
 {
   "name": "RabbitHole",
-  "timestamp": "2023-11-27T03:15:38.984Z",
+  "timestamp": "2023-12-07T04:53:51.050Z",
   "version": {
     "major": 1,
-    "minor": 0,
+    "minor": 1,
     "patch": 0
   },
   "tags": {},
@@ -756,6 +756,13 @@
       "address": "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
       "symbol": "USDC.e",
       "decimals": 6,
+      "chainId": 42161
+    },
+    {
+      "name": "Woo Trade Token",
+      "address": "0xcAFcD85D8ca7Ad1e1C6F82F651fA15E33AEfD07b",
+      "symbol": "WOO",
+      "decimals": 18,
       "chainId": 42161
     },
     {
