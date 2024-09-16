@@ -1,13 +1,16 @@
 {
-  "name": "RabbitHole",
-  "timestamp": "2023-12-07T04:53:51.050Z",
+  "name": "Boost",
+  "timestamp": "2024-09-16T19:02:24.106Z",
   "version": {
-    "major": 1,
-    "minor": 1,
+    "major": 2,
+    "minor": 0,
     "patch": 0
   },
   "tags": {},
-  "keywords": ["rabbithole", "default"],
+  "keywords": [
+    "boost",
+    "default"
+  ],
   "tokens": [
     {
       "chainId": 1,
@@ -792,125 +795,6 @@
       "name": "yearn finance",
       "symbol": "YFI",
       "decimals": 18
-    },
-    {
-      "chainId": 42220,
-      "address": "0xD629eb00dEced2a080B7EC630eF6aC117e614f1b",
-      "name": "Wrapped Bitcoin",
-      "symbol": "BTC",
-      "decimals": 18
-    },
-    {
-      "chainId": 42220,
-      "address": "0x471EcE3750Da237f93B8E339c536989b8978a438",
-      "name": "Celo",
-      "symbol": "CELO",
-      "decimals": 18
-    },
-    {
-      "name": "Wrapped Ether",
-      "address": "0x2DEf4285787d58a2f811AF24755A8150622f4361",
-      "symbol": "WETH",
-      "decimals": 18,
-      "chainId": 42220
-    },
-    {
-      "chainId": 43114,
-      "address": "0x63a72806098Bd3D9520cC43356dD78afe5D386D9",
-      "name": "Aave",
-      "symbol": "AAVE",
-      "decimals": 18
-    },
-    {
-      "name": "DAI.e Token",
-      "address": "0xd586E7F844cEa2F87f50152665BCbc2C279D8d70",
-      "symbol": "DAI.e",
-      "decimals": 18,
-      "chainId": 43114
-    },
-    {
-      "chainId": 43114,
-      "address": "0xD24C2Ad096400B6FBcd2ad8B24E7acBc21A1da64",
-      "name": "Frax",
-      "symbol": "FRAX",
-      "decimals": 18
-    },
-    {
-      "chainId": 43114,
-      "address": "0x62edc0692BD897D2295872a9FFCac5425011c661",
-      "name": "GMX",
-      "symbol": "GMX",
-      "decimals": 18
-    },
-    {
-      "name": "ChainLink Token",
-      "address": "0x5947BB275c521040051D82396192181b413227A3",
-      "symbol": "LINK",
-      "decimals": 18,
-      "chainId": 43114
-    },
-    {
-      "chainId": 43114,
-      "address": "0x130966628846BFd36ff31a822705796e8cb8C18D",
-      "name": "Magic Internet Money",
-      "symbol": "MIM",
-      "decimals": 18
-    },
-    {
-      "chainId": 43114,
-      "name": "Stargate Finance",
-      "symbol": "STG",
-      "address": "0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590",
-      "decimals": 18
-    },
-    {
-      "chainId": 43114,
-      "address": "0x37B608519F91f70F2EeB0e5Ed9AF4061722e4F76",
-      "name": "Sushi",
-      "symbol": "SUSHI",
-      "decimals": 18
-    },
-    {
-      "name": "UNI.e Token",
-      "address": "0x8eBAf22B6F053dFFeaf46f4Dd9eFA95D89ba8580",
-      "symbol": "UNI.e",
-      "decimals": 18,
-      "chainId": 43114
-    },
-    {
-      "name": "USDC Token",
-      "address": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
-      "symbol": "USDC",
-      "decimals": 6,
-      "chainId": 43114
-    },
-    {
-      "name": "Tether USD",
-      "address": "0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7",
-      "symbol": "USDT",
-      "decimals": 6,
-      "chainId": 43114
-    },
-    {
-      "chainId": 43114,
-      "address": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
-      "name": "Wrapped AVAX",
-      "symbol": "WAVAX",
-      "decimals": 18
-    },
-    {
-      "name": "Wrapped BTC",
-      "address": "0x50b7545627a5162F82A992c33b87aDc75187B218",
-      "symbol": "WBTC",
-      "decimals": 8,
-      "chainId": 43114
-    },
-    {
-      "name": "Wrapped Ether",
-      "address": "0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB",
-      "symbol": "WETH",
-      "decimals": 18,
-      "chainId": 43114
     },
     {
       "chainId": 324,
